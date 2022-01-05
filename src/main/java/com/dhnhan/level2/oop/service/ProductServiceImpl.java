@@ -55,7 +55,7 @@ public class ProductServiceImpl implements ProductService {
 
   @Override
   public Optional<Phone> findPhone(Integer id) {
-    List<Phone> phones = this.phoneCSVDataSource.getContent(0, this.phoneCSVDataSource.count());
+    List<Phone> phones = this.phoneCSVDataSource.getContent(1, this.phoneCSVDataSource.count());
     return AppUtility.findById(phones, id);
   }
 
