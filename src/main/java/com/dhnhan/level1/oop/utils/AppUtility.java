@@ -12,7 +12,8 @@ import java.util.List;
  **/
 public final class AppUtility {
 
-  public static final String CSV = "";
+  private AppUtility() {
+  }
 
   public static ShopInfo findById(List<ShopInfo> shops, Integer id) {
     for (ShopInfo shopInfo : shops) {
